@@ -1,0 +1,44 @@
+{
+  "src_folders" : ["tests"],
+  "output_folder" : "reports",
+  "page_objects_path" : ["pages"],
+  "test_workers": {
+    "enabled": false,
+    "workers": "auto"
+  },
+
+  "selenium" : {
+    "start_process" : true,
+    "server_path" : "../../../node_modules/selenium-server-standalone-jar/jar/selenium-server-standalone-3.5.3.jar",
+    "host" : "127.0.0.1",
+    "port" : 4445,
+    "cli_args" : {
+      "webdriver.chrome.driver" : "../../../node_modules/chromedriver/bin/chromedriver",
+      "webdriver.ie.driver" : ""
+    }
+  },
+
+  "test_settings" : {
+    "default" : {
+      "selenium_port"  : 4445,
+      "selenium_host"  : "localhost",
+      "use_ssl" : false,
+      "silent": true,
+      "screenshots" : {
+        "enabled" : false,
+        "path" : ""
+      },
+      "globals" : {
+        "runPlatform" : "selenium"
+      },
+      "desiredCapabilities": {
+        "browserName": "chrome",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true,
+        "chromeOptions" : {
+          "args" : ["auto-open-devtools-for-tabs"]
+        }
+      }
+    }
+  }
+}
