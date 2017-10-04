@@ -1,5 +1,6 @@
 {
   "name": "snake",
+  "homepage": "https://juancaacuna.github.io/snake-react",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,10 +12,12 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "test:end-to-end": "cd src/test/end-to-end && nightwatch -c nightwatch.json --env",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy" : "npm run build&&gh-pages -d build"
   },
   "devDependencies": {
     "chromedriver": "^2.32.3",
+    "gh-pages": "^1.0.0",
     "nightwatch": "^0.9.16",
     "selenium-server-standalone-jar": "^3.5.3"
   }
