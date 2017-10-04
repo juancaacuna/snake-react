@@ -4,6 +4,11 @@ Snake with React.js
 The snake game done with [react.js](https://reactjs.org/), one of the most popular libraries to create interactive UIs.
 
 
+Ready to play?
+-----
+[Try it here!](https://juancaacuna.github.io/snake-react/)
+
+
 Testing
 -----
 
